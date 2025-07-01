@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yasmina - Web & Mobile App Developer Portfolio">
+    <title>Yasmina | Web & Mobile App Developer</title>
+    <!-- Google Fonts - Poppins & Sora -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">Yasmina<span>.</span></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" id="closeMenu"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#tech">Tech Stack</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" id="openMenu"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="gradient-text">Yasmina</span> —</h1>
+                    <h2>Web & Mobile App Developer</h2>
+                    <p>I create beautiful, functional, and user-friendly digital experiences.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">My Projects</a>
+                        <a href="cv/My resume.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar-container">
+                        <img src="images/profilee.jpg" alt="Yassmina" class="avatar">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Check out some of my recent work</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="firebase">Firebase</button>
+                <button class="filter-btn" data-filter="api">API</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="flutter firebase">
+                    <div class="project-img">
+                        <img src="images/pharmacyti.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App for Fitness Tracking</h3>
+                        <p>A Flutter app with Firebase backend for tracking workouts and nutrition.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="api web">
+                    <div class="project-img">
+                        <img src="images/cmc_events.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Dashboard</h3>
+                        <p>A responsive admin dashboard with REST API integration.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="flutter api">
+                    <div class="project-img">
+                        <img src="images/weather_app.jpeg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Forecast App</h3>
+                        <p>A beautiful weather app built with Flutter and OpenWeather API.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>API</span>
+                            <span>Dart</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="web firebase">
+                    <div class="project-img">
+                        <img src="images/social_media.png" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Dashboard</h3>
+                        <p>A real-time dashboard for social media analytics with Firebase.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="images/about-me.png" alt="About Yassmina">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate Web & Mobile App Developer with a love for creating elegant solutions to complex problems. When I'm not coding, you can find me exploring new technologies, hiking in nature, or enjoying a good book.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                       
+                        <div class="stat-item">
+                            <h3>0-2</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <h3>My Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <i class="fab fa-Flutter"></i>
+                            <p>Flutter</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <p>Firebase</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>REST APIs</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML/CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>Supabase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & <span class="gradient-text">Experience</span></h2>
+                <p>My academic and professional journey</p>
+            </div>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Web & mobile app Trainee </h3>
+                        <h4>CMC SOUSS MASSA</h4>
+                        <p class="timeline-date">2023 - 2025</p>
+                        <p>Leading the development of Flutter applications for enterprise clients. Implementing complex features and mentoring junior developers.</p>
+                    </div>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Fullstack Developer intern</h3>
+                        <h4>Wekeen</h4>
+                        <p class="timeline-date">April 2025</p>
+                        <p>Developed responsive web applications using modern JavaScript frameworks. Collaborated with designers to implement pixel-perfect UIs.</p>
+                    </div>
+                </div>
+                <!-- Education Item 1 -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master's in Computer Science</h3>
+                        <h4>University of Technology</h4>
+                        <p class="timeline-date">2017 - 2019</p>
+                        <p>Specialized in Mobile Computing and Web Technologies. Graduated with honors.</p>
+                    </div>
+                </div> -->
+                <!-- Education Item 2 -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor's in Software Engineering</h3>
+                        <h4>Tech Institute</h4>
+                        <p class="timeline-date">2013 - 2017</p>
+                        <p>Focused on software development fundamentals and programming languages.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Tech <span class="gradient-text">Stack</span></h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-flutter"></i>
+                    <p>Flutter</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-dart"></i>
+                    <p>Dart</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-fire"></i>
+                    <p>Firebase</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <p>Supabase</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-code"></i>
+                    <p>REST APIs</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span class="gradient-text">Testimonials</span></h2>
+                <p>What people say about my work</p>
+            </div>
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Yassmina delivered our mobile app ahead of schedule and exceeded our expectations. Her attention to detail and problem-solving skills are exceptional."</p>
+                    <div class="testimonial-author">
+                        <img src="images/client1.png" alt="Client 1">
+                        <div class="author-info">
+                            <h4>Lahcen Alayat</h4>
+                            <p>CEO, Wekeen</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <!-- <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Yassmina was a pleasure. She understood our requirements perfectly and delivered a beautiful, functional website that has significantly increased our conversions."</p>
+                    <div class="testimonial-author">
+                        <img src="images/client2.jpg" alt="Client 2">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Marketing Director, TechSolutions</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <p>Let's make something awesome together!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>yasminajabrouni@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+212622102048</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Agadir, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Yassy30" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yasmina-jabrouni-365173294/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">Yasmina<span>.</span></a>
+                    <p>Let's make something awesome together!</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Connect</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Yassy30" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yasmina-jabrouni-365173294/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Yasmina. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
